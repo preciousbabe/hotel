@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Hotel Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- <script src="https://kit.fontawesome.com/e6d5545f07.js" crossorigin="anonymous"></script> -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <!-- header section -->
+  <header class="header" id="navigation-menu">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo"> <img src="image/logo.png" alt=""> </a>
+
+        <ul class="nav-menu">
+          <li> <a href="#home" class="nav-link">Home</a> </li>
+          <li> <a href="#about" class="nav-link">About</a> </li>
+          <li> <a href="#rooms" class="nav-link">Rooms</a> </li>
+          <li> <a href="#restaurant" class="nav-link">Restaurant</a> </li>
+          <li> <a href="#gallery" class="nav-link">Gallery</a> </li>
+          <li> <a href="#contact" class="nav-link">Contact</a> </li>
+        </ul>
+
+        <div class="hambuger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span> 
+        </div>
+      </nav>
+    </div>
+  </header>
+ 
+<!-- hero section -->
+  <section class="home" id="home">
+    <div class="head_container">
+      <div class="box">
+        <div class="text">
+          <h1>Rose Berry</h1>
+          <h2>Hotel & Suites</h2>
+          <p>...Experience the Difference</p>
+          <!-- <button>MORE INFO</button> -->
+        </div>
+      </div>
+      <div class="image">
+        <img src="./img/home1.jpg" class="slide">
+      </div>
+      <div class="image_item">
+        <img src="./img/home1.jpg" alt="" class="slide active" onclick="img('./img/home1.jpg')">
+        <img src="./img/home2.jpg" alt="" class="slide" onclick="img('./img/home2.jpg')">
+        <img src="./img/home3.jpg" alt="" class="slide" onclick="img('./img/home3.jpg')">
+        <img src="./img/home4.jpg" alt="" class="slide" onclick="img('./img/home4.jpg')">
+      </div>
+    </div>
+  </section>
+
+  <!-- book section -->
+  <section class="book">
+    <div class="container flex">
+      <div class="input grid">
+        <div class="box">
+          <label>Check-in:</label>
+          <input type="date" placeholder="Check-in-Date">
+        </div>
+        <div class="box">
+          <label>Check-out:</label>
+          <input type="date" placeholder="Check-out-Date">
+        </div>
+        <div class="box">
+          <label>Adults:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+        <div class="box">
+          <label>Children:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+      </div>
+      <div class="search">
+        <input type="submit" value="SEARCH">
+      </div>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section class="about top" id="about">
+    <div class="container flex">
+      <div class="left">
+        <div class="img">
+          <img src="./img/a1.jpg" alt="" class="image1">
+          <img src="./img/a2.jpg" alt="" class="image2">
+        </div>
+      </div>
+      <div class="right">
+        <div class="heading">
+          <h5>RAISING COMFOMRT TO THE HIGHEST LEVEL</h5>
+          <h2>Welcome to Rose Berry Hotel & Suite</h2>
+          <p>Here at Rose Berry hotel, we ensure quality and quick services is rendered to all our guest. We also offer room services to the convienence of our guests. We also provide 24hous power supply  and wine bar to ensure total comfort and relaxation of our esteem guests. </p>
+          <p>We also have an event center were various social activites like music and comedy shows performed by mostly celebrities are performed.</p>
+          <p>All our staffs are well-mannered and very polite to services. Other services like quick-laundry services, security services and car-washing services are also made avaliable for the comfort and security of our guests.</p>
+          <!-- <button class="btn1">READ MORE</button> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper  top">
+    <div class="container">
+      <div class="text">
+        <h2>Our Amenities</h2>
+        <p>Rose Berry hotel consist of various high quality social and domestic amenities to facilitate quick living. These include the following outlisted below.</p>
+
+        <div class="content">
+          <div class="box flex">
+            <i class="fas fa-toilet-paper-alt"></i>
+            <span>Lift Elevator</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-washer"></i>
+            <span>Laundry</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-spa"></i>
+            <span>Recreational Center</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-ship"></i>
+            <span>Air conditioned rooms</span>
+          </div>
+          <div class="box flex">
+            <i class="far fa-battery-bolt"></i>
+            <span>247 Power Supply</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-microphone"></i>
+            <span>Conference room</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-wreath"></i>
+            <span>Event Center</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-warehouse"></i>
+            <span>Top notch Security</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- room section -->
+  <section class="room top" id="rooms">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>RAISING COMFORT TO THE HIGHEST LEVEL</h5>
+          <h2>Rooms $ Suites</h2>
+        </div>
+        <!-- <div class="button">
+          <button class="btn1">VIEW ALL</button>
+        </div> -->
+      </div>
+
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="./img/r1.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Classic Deluxe Rooms</h3>
+            <div class="flexer">
+              <p>15,000 NGN <span>per night</span> </p>
+              <button class="btnr">Book Now!</button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="./img/r2.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Deluxe Rooms</h3>
+            <div class="flexer">
+              <p>25,000 NGN <span>per night</span> </p>
+              <button class="btnr">Book Now!</button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="./img/r3.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Super Deluxe Rooms</h3>
+            <div class="flexer">
+              <p>30,000 NGN <span>per night</span> </p>
+              <button class="btnr">Book Now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="./img/r1.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Exqiusite Suite</h3>
+            <div class="flexer">
+              <p>37,000 NGN <span>per night</span> </p>
+              <button class="btnr">Book Now!</button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="./img/r2.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Junior Suite</h3>
+            <div class="flexer">
+              <p>42,000 NGN <span>per night</span> </p>
+              <button class="btnr">Book Now!</button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="./img/r3.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Luxury Suite</h3>
+            <div class="flexer">
+              <p>50,000 NGN <span>per night</span> </p>
+              <button class="btnr">Book Now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="wrapper wrapper2 top">
+    <div class="container">
+      <div class="text">
+        <div class="heading">
+          <h2>Our Special Offer</h2>
+        </div>
+
+        <div class="para">
+          <p>Rose Berry Hotel and Suite offers free breakfast to all guests that lodge in our rooms. This is  to express our sincere gratitude and also let our guest get a taste of our meals.</p>
+
+          <!-- <div class="box flex">
+            <div class="img">
+              <img src="./img/c.jpg" alt="">
+            </div> -->
+            <div class="name">
+              <h4>From the Director's Desk</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- restaurant section -->
+  <section class="restaurant top" id="restaurant">
+    <div class="container flex">
+      <div class="left">
+        <img src="./img/re.jpg" alt="">
+      </div>
+      <div class="right">
+        <div class="text">
+          <h2>Our Restaurant & Bar.</h2>
+          <p>We have resturants and bars of different nature and standards were food and drinks of various kinds like african and continental dishes are made avaliable at an affordable rate to all our guests.</p>
+        </div>
+        <div class="accordionWrapper">
+          <div class="accordionItem open">
+            <h2 class="accordionIHeading">V.I.P Bar & Resturant</h2>
+            <div class="accordionItemContent">
+              <p>This is a kind of bar that provides total privacy and quiteness to guests. We recommend it to guests that need a private and noise-free environment.
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Open Bar & Restaurant</h2>
+            <div class="accordionItemContent">
+              <p>This is a kind of bar that provides socio-interactive environment to guests. It is favourable to all kinds of activities.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <button class="btn1">VIEW FOOD MENU</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery section -->
+  <section class="gallary mtop " id="gallery">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>WELCOME TO OUR PHOTO GALLERY</h5>
+          <h2>Photo Gallery of Our Hotel</h2>
+        </div>
+        <div class="button">
+          <button class="btn1">VIEW GALLERY</button>
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="./img/g1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/g2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/g3.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/g4.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/g5.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/g6.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/g7.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/g8.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+ 
+    <!-- map section -->
+  <section class="map top">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14131.036667732067!2d85.32395955!3d27.69383745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1637755481449!5m2!1sen!2snp" width="600" height="450" style="border:0;"
+      allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+
+  <footer>
+    <div class="container grid top">
+      <div class="box">
+      <h1>Rose Berry</h1>
+      <h2>Hotel & Suites</h2>
+      <p>...Experience the Difference</p>
+      </div>
+
+       <div class="box">
+        <h3>Events</h3>
+        <ul>
+          <li>Chill and have fun in Our Event Hall</li>
+          <li>Valentine @ Rose Berry Hotel</li>
+          <li>Live Music Concerts at RoseBerry</li>
+        </ul>
+      </div> 
+
+      <div class="box">
+        <h3>For Customers</h3>
+        <ul>
+          <li>About Rose Berry</li>
+          <li>Customer Care/Help</li>
+          <li>Terms & Conditions</li>
+          <li>24/ 7 Customer Services </li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Contact Us</h3>
+
+        <ul>
+          <li>Umuchichi by Union bank junction aba, Abia State.</li>
+          <li><i class="far fa-envelope"></i>roseberryhotel@gmail.com </li>
+          <li><i class="far fa-phone-alt"></i>+234 803 098 3118 </li>
+          <li><i class="far fa-phone-alt"></i>+234 803 098 3118 </li>
+         
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-end">
+      <p class="small h5">Copyright &copy; <strong>Rose Berry Hotel & Suite</strong></p>
+  </div>
+  </footer>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="./main.js"></script>
+</body>
+
+</html>
